@@ -12,12 +12,11 @@ without introducing nesting. Context provides a way to pass data through the com
 */
 const About = () => {
   const a = useContext(NoteContext);
-  useEffect(() => {
-    a.updateState();
-  }, []);
+  
+  // this above useEffect works as componentDidMount in class based Components
   return (
     <div>
-      <h1>Hi, I am About {a.state.name}</h1>
+      <h1>Hi, I am About Page</h1>
     </div>
   );
 };
