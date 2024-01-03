@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import NoteState from "./context/notes/NoteState";
+import Alert from "./components/Alert";
 /* React app is made of --> State and Component
  now context api is used for navigation and navigation events and navigation events are handled internally
  */
@@ -15,6 +16,7 @@ function App() {
         <Router>
           <div>
             <Navbar />
+            <Alert  message ={'This is amazing react course'}/>
             <div className="container my-3">
               <Routes>
                 <Route exact path="/" element={<Home />} />

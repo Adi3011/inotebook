@@ -1,5 +1,5 @@
-import React, { useContext, useEffect } from "react";
-import NoteContext from "../context/notes/noteContext";
+import React from "react";
+// import NoteContext from "../context/notes/noteContext";
 
 /*What is a Hook? A Hook is a special function that lets you “hook into” React features. For example, useState is a Hook that lets you add React state to function components. We’ll learn other Hooks later.
 https://legacy.reactjs.org/docs/hooks-state.html ---> useState()
@@ -11,7 +11,7 @@ useContext() --> is a hook in React that allows you to subscribe to a React cont
 without introducing nesting. Context provides a way to pass data through the component tree without having to pass props down manually at every level.
 */
 const About = () => {
-  const a = useContext(NoteContext);
+  // const a = useContext(NoteContext);
   
   // this above useEffect works as componentDidMount in class based Components
   return (

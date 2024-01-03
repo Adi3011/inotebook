@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 /*useLocation
@@ -9,9 +9,6 @@ This could be really useful e.g. in a situation where you would like to trigger 
 
 export default function Navbar() {
   let location = useLocation();
-  useEffect(() => {
-    console.log(location.pathname);
-  }, [location]);
 
   return (
     <div>
